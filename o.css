@@ -1,0 +1,49 @@
+.box1{
+    background-color:white;
+    color:white;
+    border:5px blue solid;
+    border-bottom-width:5px;
+    border-bottom-style:dotted;
+    border-top-style:dotted;
+    padding-bottom:10px;
+    padding-top:9px;
+    margin-top:50px;
+    line-height: 100px; /* 使用行高来垂直居中文本 */
+    text-align: center; /* 水平居中文本 */
+    font-size: 24px; /* 初始字体大小 */
+}
+.box2{
+    text-align:center;
+    line-height:50px;
+}
+.box3{
+    text-align:center;
+    line-height:50px;
+}
+.box4{
+    text-align:center;
+    line-height:50px;
+}
+.box5{
+    text-align:center;
+    line-height:50px;
+}
+.boxn
+{
+    text-align:center;
+    line-height:50px;
+}
+.box6{
+    text-align:center;
+    line-height:50px;
+}
+.box7
+{
+    text-align:center;
+    line-height:50px;
+}
+.box8
+{
+    text-align:center;
+    line-height:50px;
+}

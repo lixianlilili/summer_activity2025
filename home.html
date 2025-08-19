@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>求职简历</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <script src="./js/jq.js"></script>
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="o.css">
+</head>
+
+<body>
+  <canvas class="canvas-wrap" id="triangle-lost-in-space" resize="true"></canvas>
+
+  <!-- loadding -->
+  <div class="lodding-wrap">
+    <div class="loadding-div"></div>
+  </div>
+
+
+  <!-- 主要页面 -->
+  <div class="box">
+
+    <!-- 顶部栏 -->
+    <div class="header borderafter">
+      <!-- 返回按钮 -->
+      <a style="position: absolute;left:50px;" href="javascript:history.back()">
+        <svg t="1649246285004" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          p-id="3737" width="20" height="20">
+          <path
+            d="M98 468.9l322.8-322.8v184.4C743.6 376.7 881.9 607.3 928 837.8 812.7 676.4 651.3 602.6 420.8 602.6v189.1L98 468.9z"
+            p-id="3738" fill="#254665"></path>
+        </svg>
+      </a>
+
+
+      <div class="col">
+        <span>我们的考察！</span>
+        <!-- 右边操作栏 -->
+        <div class="header-right">
+          <!-- 按钮 -->
+          <div class="min_menu-wrap" id="minmenu">
+            <span class="min_menu"></span>
+          </div>
+          <!-- 列表 -->
+          <div class="menu_list">
+            <!-- 栏目 -->
+            <ul class="header-nav">
+              <li><a href="./index2.html">主页</a></li>
+              <li class="active"><a href="./home.html">活动内容简介</a></li>
+              <li><a href="./resume.html">经验</a></li>
+              <li><a href="./contact.html">联系</a></li>
+              <li><a href="./blog.html">博客</a></li>
+              <li><a href="./live.html">其他</a></li>
+            </ul>
+            <!-- 开关灯 -->
+            <span class="kaig-bottm">
+              <svg t="1649159647627" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="2250" width="15" height="15">
+                <path
+                  d="M1008.535135 710.670332l-70.446388 116.386904a112.099975 112.099975 0 0 1-140.572857 43.829042l-69.422645-17.083729c-5.502624 3.1992-11.133217 6.3984-16.763809 9.341665l-18.299425 62.896276C687.335435 981.514621 639.4754 1023.744064 582.657604 1023.744064H441.764828c-56.817796 0-104.677831-42.293427-110.308423-97.703574l-18.299425-62.896276a422.166458 422.166458 0 0 1-16.827793-9.341665l-69.614597 17.083729a112.163959 112.163959 0 0 1-140.508873-43.893026L15.631361 710.542364a107.493127 107.493127 0 0 1 32.43989-144.731817L96.251206 518.910272a410.649338 410.649338 0 0 1 0-14.204448l-48.179955-46.836291a107.365159 107.365159 0 0 1-32.375906-144.731817l70.190452-116.450888a112.099975 112.099975 0 0 1 140.572857-43.893026l69.550612 17.083729c5.566608-3.1992 11.133217-6.3984 16.827794-9.341665l18.299425-62.896276C336.831061 42.229443 384.691096 0 441.508892 0H582.529636c56.817796 0 104.677831 42.293427 110.372407 97.63959l18.235441 62.704324c5.75856 3.007248 11.325169 6.142464 16.827793 9.341665l69.678581-17.083729a112.163959 112.163959 0 0 1 140.508873 43.893026l70.446388 116.514872a107.493127 107.493127 0 0 1-32.375906 144.731817l-48.179955 46.772307a414.616346 414.616346 0 0 1 0 14.204448l48.243939 46.836291c47.092227 31.928018 62.192452 94.952262 32.247938 145.115721z m-213.066733-142.23644l3.391152-31.032242a246.210447 246.210447 0 0 0 0-51.699076l-3.263184-30.904274 93.992502-91.305173-53.554612-88.553862-131.615096 32.311922-23.546113-16.059985a294.134466 294.134466 0 0 0-48.627844-26.809297l-27.513121-11.901025L568.453156 127.968008H455.649356L419.370426 252.736816l-27.705074 11.965009c-16.635841 7.166208-32.951762 16.187953-48.499875 26.745313l-23.610097 15.996001-131.487128-32.247938-53.36266 88.489878 94.056486 91.433141-3.263184 30.968258a247.874031 247.874031 0 0 0 0 51.699076l3.1992 30.904274-93.928518 91.369157 53.554612 88.489878 131.551112-32.311922 23.610097 16.059985c15.292177 10.429393 31.544114 19.451137 48.563859 26.809297l27.577106 11.965009L455.905292 895.776056h112.611848l36.342914-124.768808 27.64109-11.965009c16.699825-7.166208 32.951762-16.187953 48.563859-26.745313l23.546113-15.996001 131.423144 32.247938 53.68258-88.745814-94.184454-91.369157zM512.147232 615.846038c57.329668 0 103.846038-46.516371 103.974006-103.974006 0-57.329668-46.644339-103.974006-103.974006-103.974007S408.173225 454.542364 408.173225 511.872032 454.817564 615.846038 512.147232 615.846038z m0 127.968008c-127.968008 0-231.942014-103.910022-231.942015-231.942014 0-127.968008 103.910022-231.942014 231.942015-231.942015 127.968008 0 231.942014 103.910022 231.942014 232.133967A232.133967 232.133967 0 0 1 512.147232 743.814046z"
+                  p-id="2251"></path>
+              </svg>
+              <!-- 开关按钮 -->
+              <span class="my-radio active" id="myRadio">
+                <i></i>
+              </span>
+              <svg t="1649159678284" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" p-id="3376" width="15" height="15">
+                <path
+                  d="M505.4 878.6c-196.7 0-358-150.9-374.9-343.1 1-18.6 16.1-33.4 34.9-33.4 10.8 0 20.5 4.8 26.9 12.4 0.2 0.3 0.5 0.1 0.5-0.7 41.6 44.2 100.5 71.9 166.1 71.9 127.1 0 230.1-103 230.1-230.1 0-66.1-28-125.1-72.6-166.8 0.1-0.1 0.5-0.1 0.3-0.3-7-6.5-11.4-15.7-11.4-26.1 0-19 14.9-34.1 33.7-35.3 192.1 17.1 342.9 178.3 342.9 375 0 208-168.5 376.5-376.5 376.5z"
+                  p-id="3377"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 顶部导航 -->
+    <div class="navigation">
+      <div class="nav-titleBox co zz">
+        <!-- 占位符 -->
+        <div class="co-left"></div>
+
+        <!-- 标题 -->
+        <div class="co-right">
+          <span class="titleBox-tag">PORTFOLIO!</span>
+          <h1>
+            山东大学湿地考察团活动安排
+          </h1>
+          <a class="buttom navbtn" href="#next-one">了解一下我们的计划吧
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="box1">
+      <p> 鄱阳湖暑期社会实践实施方案</p>
+  </div>
+  <div class="box2">
+ <h2>
+  一、活动背景与意义
+ </h2>
+ <p>
+  鄱阳湖，作为中国最大的淡水湖，承载着丰富的生物多样性和独特的生态系统。然而，近年来，由于人类活动和自然环境变化的影响，鄱阳湖的生态环境面临严峻挑战。
+  <img style="width:50vw" src=" oll/image.png"pngalt="This is a imag tap">
+  <br>为了深入了解鄱阳湖的生态现状，提高青年一代的环保意识，并寻求有效的保护措施，我们计划组织一次鄱阳湖暑期社会实践活动。<br>此次活动旨在通过实地考察、调研和宣传教育，为鄱阳湖的生态保护贡献一份力量。
+ </p>
+  </div>
+  <div class="box3">
+ <h2>
+  二、活动目标
+ </h2>
+ <ul>
+  <li>深入了解鄱阳湖的生态环境、生物多样性及面临的威胁</li>
+  <li>提升青年学生的环保意识和实践能力，培养责任感。</li>
+  <li>通过实地考察和调研，为鄱阳湖的生态保护提供科学依据。 加强与当地社区和相关机构的合作，共同推动鄱阳湖的生态保护工作。</li>
+</ul>
+  </div>
+  <div class="box4">
+      <h2>
+          三、活动时间与地点
+      </h2>
+      <p>活动时间：2024年8月11日至2024年8月17日，共计6天。</p>
+      <p>活动地点：鄱阳湖及周边地区。</p>
+  </div>
+  <div class="box5">
+      <h2>
+          四、活动内容与安排
+      </h2>
+      <h3>
+          （一）生态调研
+      </h3>
+      <p>
+         
+1.水质监测：在鄱阳湖不同区域采集水样，检测水质指标，如pH值、溶解氧、总磷、总氮等，以评估鄱阳湖的水质状况。
+
+      </p>
+      <img style="width:50vw" src=" https://img2.baidu.com/it/u=1343897236,3661159517&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=375"pngalt="This is a imag tap">
+      <p>
+          2.生物多样性调查：通过观察和记录鄱阳湖地区的动植物种类、数量及分布情况，分析生物多样性的现状及其变化趋势。
+      </p>
+      <img style="width:50vw" src=" https://img1.baidu.com/it/u=1466304146,270484654&fm=253&fmt=auto&app=138&f=JPEG?w=1024&h=442"pngalt="This is a imag tap">
+      <p>
+          3.生态环境评估：结合水质监测和生物多样性调查结果，对鄱阳湖的生态环境进行综合评估，提出改进建议
+      </p>
+      <h3>（二）环保宣传教育</h3>
+      <p>
+          1.环保讲座：邀请学校生态专家为当地居民和学生举办讲座，普及生态环保知识，提高生态环保意识。
+<br>2.宣传资料制作与发放：制作鄱阳湖生态保护宣传海报、手册、保护动物文创等物品，并在当地社区、学校等场所进行发放。
+<br>3.社交媒体宣传：利用微博、微信公众号等社交媒体平台，发布鄱阳湖生态保护的相关信息，扩大宣传范围。在各大新闻网站发布社会实践每日动态
+      </p>
+      <h3>（三）实践活动
+         </h3>
+         <p>
+          1.环境清洁行动：组织志愿者在鄱阳湖周边地区开展环境清洁行动，捡拾垃圾、清理杂物等。<br>
+          <img style="width:50vw" src=" https://img1.baidu.com/it/u=4043241304,2578926023&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500"pngalt="This is a imag tap">
+          <br>
+          2.生态修复活动：参与当地的生态修复项目，如植树造林、湿地保护等，为鄱阳湖的生态保护贡献实际行动。
+          <br>
+          3.与当地社区互动：拜访当地社区，了解居民对鄱阳湖生态保护的看法和建议，加强沟通与合作。
+          <br>
+          4.生物调研讲座活动：在进行生态调研时，邀请当地居民学生等跟随学习，普及生态保护意识。
+         </p>
+  </div>
+  <div class="boxn">
+      <h2>
+          五、实施步骤与分工
+      </h2>
+    </div>
+  <style>
+      /* 滑动窗口容器样式 */
+      .slide-container {
+        display: none; /* 默认隐藏所有窗口 */
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+    
+      /* 当前活动窗口样式 */
+      .active {
+        display: block; /* 显示当前活动窗口 */
+      }
+    
+      /* 滑动窗口标题样式 */
+      .slide-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    
+      /* 滑动窗口内容样式 */
+      .slide-content {
+        font-size: 16px;
+      }
+    
+      /* 导航按钮样式 */
+      .prev, .next {
+        cursor: pointer;
+        position:relative;
+        top: -60px;
+        left:800px;
+        width: auto;
+        padding: 16px;
+        margin-top: 20px;
+        color:black;
+        background-color: red;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+    
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+    </style>
+
+    <body>
+    
+    <div id="slides">
+      <!-- 前期准备 -->
+      <div class="slide-container" id="preparation">
+        <div class="slide-title">前期准备（6月10日至6月17日）</div>
+        <div class="slide-content">
+          确定活动方案，明确活动目标、内容和安排。<br>
+          招募志愿者，组建活动团队，并进行相关培训。<br>
+          准备必要的调研工具和设备，如水质检测仪、相机、记录本等。<br>
+          联系当地相关机构和社区，建立合作关系。
+        </div>
+      </div>
+    
+      <!-- 实地考察与调研 -->
+      <div class="slide-container" id="research">
+        <div class="slide-title">实地考察与调研（8月11日至8月17日）</div>
+        <div class="slide-content">
+          按照活动安排进行实地考察和调研工作。<br>
+          收集并整理相关数据和信息，形成调研报告。
+        </div>
+      </div>
+    
+      <!-- 环保宣传教育 -->
+      <div class="slide-container" id="education">
+        <div class="slide-title">环保宣传教育（8月11日至8月17日）</div>
+        <div class="slide-content">
+          开展环保讲座、宣传资料制作与发放等活动。<br>
+          利用社交媒体进行线上宣传。
+        </div>
+      </div>
+    
+      <!-- 实践活动 -->
+      <div class="slide-container" id="practice">
+        <div class="slide-title">实践活动（8月11日至8月17日）</div>
+        <div class="slide-content">
+          组织环境清洁行动和生态修复活动。<br>
+          与当地社区进行互动交流。
+        </div>
+      </div>
+    
+      <!-- 总结与反馈 -->
+      <div class="slide-container" id="feedback">
+        <div class="slide-title">总结与反馈（8月15日至8月17日）</div>
+        <div class="slide-content">
+          对活动进行总结评估，分析成效与不足。<br>
+          将调研报告和活动成果反馈给相关机构和社区。<br>
+          根据反馈意见，完善活动方案，为下一次活动做好准备。
+        </div>
+      </div>
+    
+      <!-- 导航按钮 -->
+      <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+      <a class="next" onclick="nextSlide(1)">&#10095;</a>
+    </div>
+    
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    
+      function showSlides() {
+        var slides = document.getElementsByClassName("slide-container");
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        if (slideIndex < 1) {slideIndex = slides.length}
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    
+      function nextSlide(n) {
+        slideIndex += n;
+        showSlides();
+      }
+    </script>
+  <div class="box6">
+      <h2>
+          六、预期成果与影响
+      </h2>
+      <p>
+          1.形成一份关于鄱阳湖生态环境的综合调研报告，为相关机构提供科学依据。
+          <br>
+2.提高青年学生和当地居民的环保意识，培养一批关注生态保护的志愿者。
+<br>
+3.通过实践活动和社交媒体以及新闻媒体宣传，扩大鄱阳湖生态保护的影响力，引起更多人的关注和参与。
+<br>
+4.建立与当地社区和相关机构的长期合作关系，共同推动鄱阳湖的生态保护工作。
+      </p>
+
+  </div>
+  <div class="box7">
+      <h2>
+          七、安全保障与风险控制
+      </h2>
+      <p>
+          1.活动前对志愿者进行安全教育培训，确保每位志愿者都了解并遵守安全规定。
+          <br>
+2.为志愿者配备必要的防护装备和急救药品，确保活动过程中的安全。
+<br>
+<img style="width:50vw" src="https://p8.itc.cn/images01/20220721/6719d376a78f4381b12ad25dda104aef.jpeg" pngalt="This is a imag tap">
+<br>
+3.与当地医疗机构建立联系，确保在紧急情况下能够及时得到救治。
+<br>
+4.对活动区域进行风险评估，避开危险区域，确保活动安全顺利进行。
+      </p>
+  </div>
+  <div class="box8">
+      <h2>
+          八、总结与展望
+      </h2>
+      <p>
+          本次鄱阳湖暑期社会实践活动旨在通过实地考察、调研和宣传教育等多种方式，<br>深入了解鄱阳湖的生态环境现状，提高青年一代的环保意识，并为鄱阳湖的生态保护提供科学依据。
+      </p>
+      <img style="width:50vw" src="https://www.view.sdu.edu.cn/__local/9/13/69/63078556609C8CDA2CA1E7070DA_CC98C126_1C557.jpg" pngalt="This is a imag tap">
+  </div>
+</body>
+
+<script src="./js/base.js"></script>
+<script type="text/javascript" src="./js/paper-full.min.js"></script>
+<script type="text/javascript" src="./js/canvas.js"></script>
+
+</html>

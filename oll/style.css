@@ -1,0 +1,125 @@
+.box1{
+    background-color: yellow;
+    color:royalblue;
+    border:5px blue solid;
+    border-bottom-width:10px;
+    border-bottom-style:dashed;
+    border-top-style:dotted;
+    padding-bottom:10px;
+    padding-top:9px;
+    margin-top:50px;
+}
+.container
+{
+    width:80%;
+    margin:auto;
+}
+.box2 h2{
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight:800;
+    font-style:italic;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+.box2 h1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight:800;
+    font-style:italic;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+.box3{
+    padding-right:200px;
+    border:5px dashed black;
+    margin:50px;
+    position:relative;
+    top:30px;
+    left:30px;
+
+}
+.box3 h1{
+    text-align:center;
+    letter-spacing: 2em;
+    
+    
+}
+.container1
+{
+    width:80%;
+    margin:auto;
+}
+.container
+{
+    margin-top:50px;
+    border:5px dotted black;
+}
+.button1
+{
+    width:400px;
+    height:25px;
+}
+.box1 {
+    font-size:50px;
+    font-style:initial;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+   
+    background:#f4f4f4;
+    color:#555555;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:inherit;
+    line-height:3em;
+}
+button{
+    background-color:#444444;
+    color:#fff;
+    padding:10px,15px;
+}
+button:hover{
+    background-color:red;
+}
+button:active{
+    background-color:#fff;
+}
+a:hover{
+    color:red;
+}
+a:visited{
+    color:blue;
+}
+li:hover{
+    background-color: red;
+}
+.block
+{
+    float:left;
+    border:dashed;
+    width:30%;
+  
+}
+.list li
+{
+   
+    list-style:square;
+    
+}
+#main-block
+{
+    float:left;
+    width:70%;
+    border:dotted;
+    box-sizing:border-box;
+}
+.clearfix
+{
+    clear:both;
+}
+#sidebar
+{
+    float:right;
+    width:30%;
+    border:dotted;
+    box-sizing:border-box;
+}
